@@ -10,38 +10,20 @@
 <body>
 
     <div class="budget">
-        <p>BUDGET: <span id="budget"></span></p>
+        <p>BUDGET: <span id="budgetStart"></span></p>
     </div>
     
     <div id="title">
-        <h1>Plant store</h1>
+        <h1>Botanic store</h1>
     </div>
     
-    <button class="showItems" onclick="showItems()">Show items</button>
+    <button id="showItems" onclick="showItems()">Show items</button>
 
-    <div id="container"> 
+    <div id="container"></div>
 
-        <div class="card">
-            <img src="assets/imgs/plant1.png" alt="">
-            <p>Plant 1</p>
-            <p>Price: <span id="price1"></span></p>
-            <button class="buyBtn" onclick="buyItem()">buy</button>
-        </div>
-
-        <div class="card">
-            <img src="assets/imgs/plant2.png" alt="">
-            <p>Plant 2</p>
-            <p>Price: <span id="price3"></span></p>
-            <button class="buyBtn" onclick="buyItem()">buy</button>
-        </div>
-
-        <div class="card">
-            <img src="assets/imgs/plant3.png" alt="">
-            <p>Plant 3</p>
-            <p>Price: <span id="price3"></span></p>
-            <button class="buyBtn" onclick="buyItem()">buy</button>
-        </div>
-
+    <div class="addBudget">
+        <input id="budgetValue" type="number">
+        <button id="addBudget" onclick="addBudget()">Add Budget</button>
     </div>
 
     <script src="js/script.js"></script>

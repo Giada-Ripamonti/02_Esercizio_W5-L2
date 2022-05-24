@@ -5,15 +5,22 @@ body {
     text-align: center;
 }
 
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
 
-.budget {
-    padding-right: 1rem;
+.budget, .addBudget {
     color: rgb(253, 187, 63);
     font-size: 1.5rem;
     font-weight: bold;
-    border: 1px dashed white ;
-    margin: 0 1rem;
+    border: 1px dashed white;
+    margin: 1rem;
+}
+
+.budget p {
+    margin: 1rem 0;
 }
 
 .budget span {
@@ -24,34 +31,59 @@ body {
 h1 {
     font-size: 4rem;
     text-transform: capitalize;
+    margin: 1.5rem 0;
 }
 
 #container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
     visibility: hidden;
 }
 
-.showItems {
-    position: absolute;
-    left: 41vw;
-    top: 50vh;  
+#showItems, #addBudget {
     border: none;
-    width: 12rem;
-    padding: 2rem;
     text-transform: uppercase;
     background-color: rgb(253, 211, 133);
     border-radius: 8px;  
     color: rgb(230, 108, 8);
     font-weight: 800;
-    font-size: 1rem;
     box-shadow: 1px 2px 10px 2px rgb(230, 108, 8);
 }
 
-.showItems:hover {
+#showItems:hover, #addBudget:hover {
     background-color: rgb(248, 187, 74);;
+}
+
+#showItems {
+    position: absolute;
+    left: 42vw;
+    top: 50vh;
+    width: 12rem;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+#addBudget, #budgetValue {
+    width: 8rem;
+    height: 3.18rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+#addBudget {
+    font-size: 0.8rem;
+}
+
+#budgetValue {
+    border-radius: 8px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(18, 129, 77);
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
 }
 
 .card {
@@ -66,29 +98,23 @@ h1 {
     position: relative;
 }
 
-.card p {
+.card h4 {
     color: rgb(18, 129, 77);
     font-size: 1.5rem;
     font-weight: 600;
+    margin: 1rem;
 }
 
-.card p:nth-child(3) {
-    color: white;
-    font-size: 1rem;
-    text-align: right;
-    padding-right: 5rem;
-    margin-bottom: 2rem;
-}
-
-.card p span {
+.card p {
+    font-size: 1.5rem;
     color: rgb(230, 108, 8);
     font-weight: 800;
-    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .card img {
     width: 50%;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .buyBtn {
@@ -101,6 +127,7 @@ h1 {
     font-weight: 600;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
+    box-shadow: 1px 2px 10px 2px rgb(18, 118, 71);
 }
 
 .buyBtn:hover {
