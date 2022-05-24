@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(18, 129, 77);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+* { box-sizing: border-box; }
+
+.budget {
+    padding-right: 1rem;
+    color: rgb(253, 187, 63);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px dashed white ;
+    margin: 0 1rem;
+}
+
+.budget span {
+    color: white;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0 1rem;
+    visibility: hidden;
+}
+
+.showItems {
+    position: absolute;
+    left: 41vw;
+    top: 50vh;  
+    border: none;
+    width: 12rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    background-color: rgb(253, 211, 133);
+    border-radius: 8px;  
+    color: rgb(230, 108, 8);
+    font-weight: 800;
+    font-size: 1rem;
+    box-shadow: 1px 2px 10px 2px rgb(230, 108, 8);
+}
+
+.showItems:hover {
+    background-color: rgb(248, 187, 74);;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    border: 3px dotted rgb(230, 108, 8);
+    border-radius: 5px;
+    background-color: rgb(248, 187, 74);
+    padding: 1rem;
+    position: relative;
+}
+
+.card p {
+    color: rgb(18, 129, 77);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card p:nth-child(3) {
+    color: white;
+    font-size: 1rem;
+    text-align: right;
+    padding-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+.card p span {
+    color: rgb(230, 108, 8);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.card img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.buyBtn {
+    width: 6rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(26, 179, 107);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.buyBtn:hover {
+    background-color: rgb(18, 129, 77);
+}
+
+
+
